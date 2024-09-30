@@ -2,7 +2,7 @@ from App.models import Result
 from App.database import db
 
 def create_result(resultID, competition_ID, winnerName, numberOfParticipants):
-    newresult = Result(resultID=resultID, competition_ID=resultID, winnerName=resultID, numberOfParticipants=resultID)
+    newresult = Result(resultID=resultID, competition_ID=competition_ID, winnerName=winnerName, numberOfParticipants=numberOfParticipants)
     db.session.add(newresult)
     db.session.commit()
     return newresult

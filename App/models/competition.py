@@ -13,3 +13,6 @@ class Competition(db.Model):
     
     def set_competitionName (self, competitionName):
         self.competitionName = competitionName
+
+    def __repr__(self):
+        return f'<Competition ID: {self.competitionID}|Competition Name: {self.competitionName}>'

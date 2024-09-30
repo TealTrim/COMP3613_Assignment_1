@@ -16,10 +16,13 @@ class Result(db.Model):
         self.resultID = resultID
     
     def set_competition_ID (self, competition_ID):
-        self.competitionName = competition_ID
+        self.competition_ID = competition_ID
     
     def set_winnerName (self, winnerName):
-        self.competition_ID = winnerName
+        self.winnerName = winnerName
     
     def set_numberOfParticipants (self, numberOfParticipants):
         self.numberOfParticipants = numberOfParticipants
+
+    def __repr__(self):
+        return f'The student {self.winnerName} won the competition, this competition had {self.numberOfParticipants} participants.'

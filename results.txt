@@ -1,0 +1,5 @@
+606, 6, Steve Jobs, 31
+707, 7, Bill Gates, 41
+808, 8, Mark Zuckerberg, 59
+909, 9, Larry Page, 26
+102, 10, Pat Gelsinger, 53

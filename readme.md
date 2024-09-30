@@ -18,5 +18,21 @@ $ pip install -r requirements.txt
 # Supported Commands:
 * Initializing the Database
 ```bash
-$ pip install -r requirements.txt
+flask init
+```
+* Create Competition
+```bash
+flask init
+```
+* Import competition results from file
+```bash
+flask init
+```
+* View competitions list
+```bash
+flask init
+```
+* View competition results
+```bash
+flask init
 ```

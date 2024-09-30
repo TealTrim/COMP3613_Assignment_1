@@ -1,3 +1,13 @@
+#-------------------------------------------
+#Student Information:
+#-------------------------------------------
+#Student Name: Teal Trim
+#Student ID: 816024202
+#Course: Software Engineering II (COMP3613)
+#Assignment: COMP3613 Assignment 1
+#Date: 30/09/2024
+#-------------------------------------------
+
 import click
 #import pytest, sys
 from flask import Flask
@@ -94,7 +104,7 @@ def list_competition_command():
     print(get_all_competitions())
     print("---")
 
-@competition_cli.command("result", help="Shows the results for a given competition in the database. [Usage: flask competition results <competition_id>]")
+@competition_cli.command("result", help="Shows the results for a given competition in the database. [Usage: flask competition result <competition_id>]")
 @click.argument("competition_id")
 def display_results_command(competition_id):
     comp = Result.query.filter_by(competition_ID=competition_id).first()
